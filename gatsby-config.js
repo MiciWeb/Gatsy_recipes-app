@@ -10,11 +10,11 @@ module.exports = {
     title: "Simply Recipes",
     description: "Nice and clean recipes site",
     author: "MiciWeb",
-    person:{name:"mici",age:19},
-    simpleData:["item 1","item 2"],
-    complexData:[
-      {name:"marie",age:26},
-      {name:"vin's",age:17},
+    person: { name: "mici", age: 19 },
+    simpleData: ["item 1", "item 2"],
+    complexData: [
+      { name: "marie", age: 26 },
+      { name: "vin's", age: 17 },
     ]
   },
   plugins: [
@@ -22,5 +22,12 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
   ],
 }
