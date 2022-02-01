@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-const RecipesList = () => {
+const RecipesList = ({ recipes = [] }) => {
     return (
-        <div>
-            recipes list
+        <div className="recipes-list">
+            {recipes.map((recipe)=>{
+                const {id,title,image,prepTime,cookTime} = recipe;
+                return <Link to={`/${title}`}>{recipe.title}</Link>
+            })}
         </div>
     )
 }
