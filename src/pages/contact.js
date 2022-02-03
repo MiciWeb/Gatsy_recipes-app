@@ -3,26 +3,6 @@ import Layout from '../components/Layout'
 import { Link, graphql, useStaticQuery } from "gatsby"
 import RecipesList from "../components/RecipesList"
 
-const query = graphql`
-{
-  allContentfulRecipe(
-    sort: {fields: title, order: ASC}
-    filter: {featured: {eq: true}}
-  ) {
-    nodes {
-      title
-      id
-      prepTime
-      cookTime
-      image {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
-      }
-    }
-    totalCount
-  }
-}
-`
-
 const Contact = ({ data }) => {
     return (
         <Layout>
@@ -63,11 +43,31 @@ const Contact = ({ data }) => {
                 </section>
                 <section className="featured-recipes">
                     <h5>Look at this Awesomesouce!</h5>
-                    <RecipesList recipes={recipes} />
+                    {/* <RecipesList recipes={recipes} /> */}
                 </section>
             </main>
         </Layout>
     )
 }
+
+export const query = graphql`
+{
+  allContentfulRecipe(
+    sort: {fields: title, order: ASC}
+    filter: {featured: {eq: true}}
+  ) {
+    nodes {
+      title
+      id
+      prepTime
+      cookTime
+      image {
+        gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+      }
+    }
+    totalCount
+  }
+}
+`
 
 export default Contact
