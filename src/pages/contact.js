@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import RecipesList from "../components/RecipesList"
 
 const Contact = ({ data }) => {
+    const recipes = data.allContentfulRecipe.nodes
     return (
         <Layout>
             {/* <SEO title="Contact" /> */}
@@ -43,7 +44,7 @@ const Contact = ({ data }) => {
                 </section>
                 <section className="featured-recipes">
                     <h5>Look at this Awesomesouce!</h5>
-                    {/* <RecipesList recipes={recipes} /> */}
+                    <RecipesList recipes={recipes} />
                 </section>
             </main>
         </Layout>

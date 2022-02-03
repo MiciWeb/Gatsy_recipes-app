@@ -25,7 +25,6 @@ const query = graphql`
 `
 
 const About = () => {
-    
     const {allContentfulRecipe:{nodes:recipes}} = useStaticQuery(query);
     return (
         <Layout>
@@ -55,7 +54,7 @@ const About = () => {
                 </section>
                 <section className="featured-recipes">
                     <h5>Look at this Awesomesouce!</h5>
-                    {/* <RecipesList recipes={recipes} /> */}
+                    <RecipesList recipes={recipes} />
                 </section>
             </main>
         </Layout>
