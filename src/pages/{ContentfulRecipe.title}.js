@@ -15,6 +15,7 @@ const RecipeTemplate = ({ data }) => {
     description: { description },
     image,
   } = data.contentfulRecipe
+  
   const pathToImage = getImage(image)
   const { tags, instructions, ingredients, tools } = content
   return (
