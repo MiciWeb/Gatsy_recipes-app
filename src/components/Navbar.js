@@ -42,7 +42,7 @@ const Navbar = () => {
                         tags
             </Link>
                     <Link
-                        to="/aboutt"
+                        to="/about"
                         className="nav-link"
                         activeClassName="active-link"
                         onClick={() => setShow(false)}
