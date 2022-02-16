@@ -2483,6 +2483,13 @@
   dependencies:
     "follow-redirects" "^1.14.0"
 
+"axios@^0.24.0":
+  "integrity" "sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.24.0.tgz"
+  "version" "0.24.0"
+  dependencies:
+    "follow-redirects" "^1.14.4"
+
 "axobject-query@^2.2.0":
   "integrity" "sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA=="
   "resolved" "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz"
@@ -2906,6 +2913,11 @@
   dependencies:
     "pascal-case" "^3.1.2"
     "tslib" "^2.0.3"
+
+"camelcase-css@^2.0.1":
+  "integrity" "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA=="
+  "resolved" "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz"
+  "version" "2.0.1"
 
 "camelcase@^5.0.0":
   "integrity" "sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg=="
@@ -3617,7 +3629,7 @@
   "resolved" "https://registry.npmjs.org/cssnano-utils/-/cssnano-utils-3.0.1.tgz"
   "version" "3.0.1"
 
-"cssnano@^5.0.0":
+"cssnano@^5.0.0", "cssnano@^5.0.11":
   "integrity" "sha512-ryhRI9/B9VFCwPbb1z60LLK5/ldoExi7nwdnJzpkLZkm2/r7j2X3jfY+ZvDVJhC/0fPZlrAguYdHNFg0iglPKQ=="
   "resolved" "https://registry.npmjs.org/cssnano/-/cssnano-5.0.16.tgz"
   "version" "5.0.16"
@@ -4889,7 +4901,7 @@
   "resolved" "https://registry.npmjs.org/flatted/-/flatted-3.2.5.tgz"
   "version" "3.2.5"
 
-"follow-redirects@^1.0.0", "follow-redirects@^1.14.0":
+"follow-redirects@^1.0.0", "follow-redirects@^1.14.0", "follow-redirects@^1.14.4":
   "integrity" "sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.7.tgz"
   "version" "1.14.7"
@@ -5190,6 +5202,18 @@
     "@babel/runtime" "^7.15.4"
     "joi" "^17.4.2"
 
+"gatsby-plugin-webfonts@^2.2.1":
+  "integrity" "sha512-1cA17Dv2iA/98WlmVFT6FK/r9aL6k3R7vjGTCot4mK39rDFaSSAMYBgwHwmWXz+cnWJtwXGfFyB0d6SaQmUFyw=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-webfonts/-/gatsby-plugin-webfonts-2.2.1.tgz"
+  "version" "2.2.1"
+  dependencies:
+    "axios" "^0.24.0"
+    "cssnano" "^5.0.11"
+    "fs-extra" "^10.0.0"
+    "lodash.isempty" "^4.4.0"
+    "postcss" "^8.3.11"
+    "postcss-js" "^3.0.3"
+
 "gatsby-react-router-scroll@^5.6.0":
   "integrity" "sha512-n8wO0xeRxvBkJXrH2DAuLKCiHQRgFn/9Ytqb3Uz19fWd5q+jpOlD/qjorkeWl2cqo8oNb83ku8D6dF3qr8OT5g=="
   "resolved" "https://registry.npmjs.org/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.6.0.tgz"
@@ -5292,7 +5316,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^4.0.0-next", "gatsby@^4.6.0":
+"gatsby@^3.0.0 || ^4.0.0", "gatsby@^4.0.0-next", "gatsby@^4.6.0":
   "integrity" "sha512-02NsTyfPQlB/JCilJri0gxvTr7WNcjZWnNUhHQatH0CJ6Sj3meSArEMNuA2thBS/CSIq/30kEOC2HDvWEWPfSA=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.6.0.tgz"
   "version" "4.6.0"
@@ -6873,6 +6897,11 @@
   "resolved" "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz"
   "version" "4.4.2"
 
+"lodash.isempty@^4.4.0":
+  "integrity" "sha1-b4bL7di+TsmHvpqvM8loTbGzHn4="
+  "resolved" "https://registry.npmjs.org/lodash.isempty/-/lodash.isempty-4.4.0.tgz"
+  "version" "4.4.0"
+
 "lodash.isplainobject@^4.0.6":
   "integrity" "sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs="
   "resolved" "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
@@ -8051,6 +8080,14 @@
   "resolved" "https://registry.npmjs.org/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-5.0.2.tgz"
   "version" "5.0.2"
 
+"postcss-js@^3.0.3":
+  "integrity" "sha512-gWnoWQXKFw65Hk/mi2+WTQTHdPD5UJdDXZmX073EY/B3BWnYjO4F4t0VneTCnCGQ5E5GsCdMkzPaTXwl3r5dJw=="
+  "resolved" "https://registry.npmjs.org/postcss-js/-/postcss-js-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "camelcase-css" "^2.0.1"
+    "postcss" "^8.1.6"
+
 "postcss-loader@^5.3.0":
   "integrity" "sha512-/+Z1RAmssdiSLgIZwnJHwBMnlABPgF7giYzTN2NOfr9D21IJZ4mQC1R2miwp80zno9M4zMD/umGI8cR+2EL5zw=="
   "resolved" "https://registry.npmjs.org/postcss-loader/-/postcss-loader-5.3.0.tgz"
@@ -8252,7 +8289,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.4", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.2.9", "postcss@^8.3.11":
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.4", "postcss@^8.1.6", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.2.9", "postcss@^8.3.11":
   "integrity" "sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.5.tgz"
   "version" "8.4.5"
